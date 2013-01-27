@@ -32,41 +32,41 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.personEditBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.personEditBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.personEditBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.personEditGridControl = new DevExpress.XtraGrid.GridControl();
             this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.colId = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colIsActive = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colRoleID = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colUserName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colPassword = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colFirstName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colMiddleName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colLastName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colDateLastUpdated = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.colUpdatedBy = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.layoutViewField_colId = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colIsActive = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colIsActive = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colRoleID = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colRoleID = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colUserName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colUserName = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colPassword = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colPassword = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colFirstName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colFirstName = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colMiddleName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colMiddleName = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colLastName = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colLastName = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colDateLastUpdated = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colDateLastUpdated = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colUpdatedBy = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colUpdatedBy = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.btnLoad = new System.Windows.Forms.Button();
             this.tbLoad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.personEditBindingSource)).BeginInit();
@@ -74,7 +74,6 @@
             this.personEditBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personEditGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colIsActive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colRoleID)).BeginInit();
@@ -85,6 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colLastName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colDateLastUpdated)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colUpdatedBy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
             this.SuspendLayout();
             // 
             // personEditBindingSource
@@ -121,6 +121,31 @@
             this.personEditBindingNavigator.TabIndex = 0;
             this.personEditBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -153,16 +178,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -185,26 +203,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // personEditBindingNavigatorSaveItem
             // 
@@ -253,11 +253,27 @@
             this.colId.Name = "colId";
             this.colId.OptionsColumn.ReadOnly = true;
             // 
+            // layoutViewField_colId
+            // 
+            this.layoutViewField_colId.EditorPreferredWidth = 101;
+            this.layoutViewField_colId.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_colId.Name = "layoutViewField_colId";
+            this.layoutViewField_colId.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colId.TextSize = new System.Drawing.Size(94, 13);
+            // 
             // colIsActive
             // 
             this.colIsActive.FieldName = "IsActive";
             this.colIsActive.LayoutViewField = this.layoutViewField_colIsActive;
             this.colIsActive.Name = "colIsActive";
+            // 
+            // layoutViewField_colIsActive
+            // 
+            this.layoutViewField_colIsActive.EditorPreferredWidth = 101;
+            this.layoutViewField_colIsActive.Location = new System.Drawing.Point(0, 20);
+            this.layoutViewField_colIsActive.Name = "layoutViewField_colIsActive";
+            this.layoutViewField_colIsActive.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colIsActive.TextSize = new System.Drawing.Size(94, 13);
             // 
             // colRoleID
             // 
@@ -265,11 +281,27 @@
             this.colRoleID.LayoutViewField = this.layoutViewField_colRoleID;
             this.colRoleID.Name = "colRoleID";
             // 
+            // layoutViewField_colRoleID
+            // 
+            this.layoutViewField_colRoleID.EditorPreferredWidth = 101;
+            this.layoutViewField_colRoleID.Location = new System.Drawing.Point(0, 40);
+            this.layoutViewField_colRoleID.Name = "layoutViewField_colRoleID";
+            this.layoutViewField_colRoleID.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colRoleID.TextSize = new System.Drawing.Size(94, 13);
+            // 
             // colUserName
             // 
             this.colUserName.FieldName = "UserName";
             this.colUserName.LayoutViewField = this.layoutViewField_colUserName;
             this.colUserName.Name = "colUserName";
+            // 
+            // layoutViewField_colUserName
+            // 
+            this.layoutViewField_colUserName.EditorPreferredWidth = 101;
+            this.layoutViewField_colUserName.Location = new System.Drawing.Point(0, 60);
+            this.layoutViewField_colUserName.Name = "layoutViewField_colUserName";
+            this.layoutViewField_colUserName.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colUserName.TextSize = new System.Drawing.Size(94, 13);
             // 
             // colPassword
             // 
@@ -277,11 +309,27 @@
             this.colPassword.LayoutViewField = this.layoutViewField_colPassword;
             this.colPassword.Name = "colPassword";
             // 
+            // layoutViewField_colPassword
+            // 
+            this.layoutViewField_colPassword.EditorPreferredWidth = 101;
+            this.layoutViewField_colPassword.Location = new System.Drawing.Point(0, 80);
+            this.layoutViewField_colPassword.Name = "layoutViewField_colPassword";
+            this.layoutViewField_colPassword.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colPassword.TextSize = new System.Drawing.Size(94, 13);
+            // 
             // colFirstName
             // 
             this.colFirstName.FieldName = "FirstName";
             this.colFirstName.LayoutViewField = this.layoutViewField_colFirstName;
             this.colFirstName.Name = "colFirstName";
+            // 
+            // layoutViewField_colFirstName
+            // 
+            this.layoutViewField_colFirstName.EditorPreferredWidth = 101;
+            this.layoutViewField_colFirstName.Location = new System.Drawing.Point(0, 100);
+            this.layoutViewField_colFirstName.Name = "layoutViewField_colFirstName";
+            this.layoutViewField_colFirstName.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colFirstName.TextSize = new System.Drawing.Size(94, 13);
             // 
             // colMiddleName
             // 
@@ -289,11 +337,27 @@
             this.colMiddleName.LayoutViewField = this.layoutViewField_colMiddleName;
             this.colMiddleName.Name = "colMiddleName";
             // 
+            // layoutViewField_colMiddleName
+            // 
+            this.layoutViewField_colMiddleName.EditorPreferredWidth = 101;
+            this.layoutViewField_colMiddleName.Location = new System.Drawing.Point(0, 120);
+            this.layoutViewField_colMiddleName.Name = "layoutViewField_colMiddleName";
+            this.layoutViewField_colMiddleName.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colMiddleName.TextSize = new System.Drawing.Size(94, 13);
+            // 
             // colLastName
             // 
             this.colLastName.FieldName = "LastName";
             this.colLastName.LayoutViewField = this.layoutViewField_colLastName;
             this.colLastName.Name = "colLastName";
+            // 
+            // layoutViewField_colLastName
+            // 
+            this.layoutViewField_colLastName.EditorPreferredWidth = 101;
+            this.layoutViewField_colLastName.Location = new System.Drawing.Point(0, 140);
+            this.layoutViewField_colLastName.Name = "layoutViewField_colLastName";
+            this.layoutViewField_colLastName.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colLastName.TextSize = new System.Drawing.Size(94, 13);
             // 
             // colDateLastUpdated
             // 
@@ -301,11 +365,27 @@
             this.colDateLastUpdated.LayoutViewField = this.layoutViewField_colDateLastUpdated;
             this.colDateLastUpdated.Name = "colDateLastUpdated";
             // 
+            // layoutViewField_colDateLastUpdated
+            // 
+            this.layoutViewField_colDateLastUpdated.EditorPreferredWidth = 101;
+            this.layoutViewField_colDateLastUpdated.Location = new System.Drawing.Point(0, 160);
+            this.layoutViewField_colDateLastUpdated.Name = "layoutViewField_colDateLastUpdated";
+            this.layoutViewField_colDateLastUpdated.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colDateLastUpdated.TextSize = new System.Drawing.Size(94, 13);
+            // 
             // colUpdatedBy
             // 
             this.colUpdatedBy.FieldName = "UpdatedBy";
             this.colUpdatedBy.LayoutViewField = this.layoutViewField_colUpdatedBy;
             this.colUpdatedBy.Name = "colUpdatedBy";
+            // 
+            // layoutViewField_colUpdatedBy
+            // 
+            this.layoutViewField_colUpdatedBy.EditorPreferredWidth = 101;
+            this.layoutViewField_colUpdatedBy.Location = new System.Drawing.Point(0, 180);
+            this.layoutViewField_colUpdatedBy.Name = "layoutViewField_colUpdatedBy";
+            this.layoutViewField_colUpdatedBy.Size = new System.Drawing.Size(203, 20);
+            this.layoutViewField_colUpdatedBy.TextSize = new System.Drawing.Size(94, 13);
             // 
             // layoutViewCard1
             // 
@@ -323,86 +403,6 @@
             this.layoutViewField_colUpdatedBy});
             this.layoutViewCard1.Name = "layoutViewCard1";
             // 
-            // layoutViewField_colId
-            // 
-            this.layoutViewField_colId.EditorPreferredWidth = 101;
-            this.layoutViewField_colId.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_colId.Name = "layoutViewField_colId";
-            this.layoutViewField_colId.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colId.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colIsActive
-            // 
-            this.layoutViewField_colIsActive.EditorPreferredWidth = 101;
-            this.layoutViewField_colIsActive.Location = new System.Drawing.Point(0, 20);
-            this.layoutViewField_colIsActive.Name = "layoutViewField_colIsActive";
-            this.layoutViewField_colIsActive.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colIsActive.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colRoleID
-            // 
-            this.layoutViewField_colRoleID.EditorPreferredWidth = 101;
-            this.layoutViewField_colRoleID.Location = new System.Drawing.Point(0, 40);
-            this.layoutViewField_colRoleID.Name = "layoutViewField_colRoleID";
-            this.layoutViewField_colRoleID.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colRoleID.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colUserName
-            // 
-            this.layoutViewField_colUserName.EditorPreferredWidth = 101;
-            this.layoutViewField_colUserName.Location = new System.Drawing.Point(0, 60);
-            this.layoutViewField_colUserName.Name = "layoutViewField_colUserName";
-            this.layoutViewField_colUserName.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colUserName.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colPassword
-            // 
-            this.layoutViewField_colPassword.EditorPreferredWidth = 101;
-            this.layoutViewField_colPassword.Location = new System.Drawing.Point(0, 80);
-            this.layoutViewField_colPassword.Name = "layoutViewField_colPassword";
-            this.layoutViewField_colPassword.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colPassword.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colFirstName
-            // 
-            this.layoutViewField_colFirstName.EditorPreferredWidth = 101;
-            this.layoutViewField_colFirstName.Location = new System.Drawing.Point(0, 100);
-            this.layoutViewField_colFirstName.Name = "layoutViewField_colFirstName";
-            this.layoutViewField_colFirstName.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colFirstName.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colMiddleName
-            // 
-            this.layoutViewField_colMiddleName.EditorPreferredWidth = 101;
-            this.layoutViewField_colMiddleName.Location = new System.Drawing.Point(0, 120);
-            this.layoutViewField_colMiddleName.Name = "layoutViewField_colMiddleName";
-            this.layoutViewField_colMiddleName.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colMiddleName.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colLastName
-            // 
-            this.layoutViewField_colLastName.EditorPreferredWidth = 101;
-            this.layoutViewField_colLastName.Location = new System.Drawing.Point(0, 140);
-            this.layoutViewField_colLastName.Name = "layoutViewField_colLastName";
-            this.layoutViewField_colLastName.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colLastName.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colDateLastUpdated
-            // 
-            this.layoutViewField_colDateLastUpdated.EditorPreferredWidth = 101;
-            this.layoutViewField_colDateLastUpdated.Location = new System.Drawing.Point(0, 160);
-            this.layoutViewField_colDateLastUpdated.Name = "layoutViewField_colDateLastUpdated";
-            this.layoutViewField_colDateLastUpdated.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colDateLastUpdated.TextSize = new System.Drawing.Size(94, 13);
-            // 
-            // layoutViewField_colUpdatedBy
-            // 
-            this.layoutViewField_colUpdatedBy.EditorPreferredWidth = 101;
-            this.layoutViewField_colUpdatedBy.Location = new System.Drawing.Point(0, 180);
-            this.layoutViewField_colUpdatedBy.Name = "layoutViewField_colUpdatedBy";
-            this.layoutViewField_colUpdatedBy.Size = new System.Drawing.Size(203, 20);
-            this.layoutViewField_colUpdatedBy.TextSize = new System.Drawing.Size(94, 13);
-            // 
             // btnLoad
             // 
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -410,7 +410,7 @@
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(75, 23);
             this.btnLoad.TabIndex = 2;
-            this.btnLoad.Text = "button1";
+            this.btnLoad.Text = "Load Person";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
@@ -421,6 +421,7 @@
             this.tbLoad.Name = "tbLoad";
             this.tbLoad.Size = new System.Drawing.Size(78, 20);
             this.tbLoad.TabIndex = 3;
+            this.tbLoad.Text = "1";
             // 
             // Form1
             // 
@@ -439,7 +440,6 @@
             this.personEditBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personEditGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colIsActive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colRoleID)).EndInit();
@@ -450,6 +450,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colLastName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colDateLastUpdated)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colUpdatedBy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

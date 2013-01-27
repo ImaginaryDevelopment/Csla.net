@@ -19,11 +19,23 @@ namespace WinFormsUI
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            if (tbLoad.Text != null && tbLoad.Text.Length > 0)
+            try
             {
-                int temp;
-                Int32.TryParse(tbLoad.Text, out temp);
-                this.personEditBindingSource.DataSource = Library.Net.PersonEdit.GetPerson(temp);
+                if (tbLoad.Text != null && tbLoad.Text.Length > 0)
+                {
+                    this.Cursor = Cursors.WaitCursor;
+                    int temp;
+                    Int32.TryParse(tbLoad.Text, out temp);
+                    this.personEditBindingSource.DataSource = Library.Net.PersonEdit.GetPerson(temp);
+                }
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
             }
         }
     }
