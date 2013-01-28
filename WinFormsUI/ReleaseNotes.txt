@@ -1,0 +1,6 @@
+﻿Please note that in the App.Config, the 'production' server section is enabled by default.  Simply remark this out:
+<add key ="CslaDataPortalUrl" value ="http://projectreportwcf.mpccservice.com/WCFPortal.svc"/>
+and uncomment this:
+ <!--<add key ="CslaDataPortalUrl" value ="http://localhost:2185/WCFPortal.svc"/>-->
+ to switch back to the local dev version.  You will have to attach the db file to your local sqlexpress instance.  Remember to delete and readd the 
+ 'AppUser' account so it is your local one.  Otherwise you will get database login failures.  Enjoy!
