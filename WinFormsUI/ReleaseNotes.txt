@@ -4,3 +4,17 @@ and uncomment this:
  <!--<add key ="CslaDataPortalUrl" value ="http://localhost:2185/WCFPortal.svc"/>-->
  to switch back to the local dev version.  You will have to attach the db file to your local sqlexpress instance.  Remember to delete and readd the 
  'AppUser' account so it is your local one.  Otherwise you will get database login failures.  Enjoy!
+
+ If you want to run this app locally do the following:
+ 1. Attach the Database to your local Sql2012 Express Edition.  Update the Web.Config in the IISHost project to reflect your sql settings here:
+ <add name="SqlDB"
+         connectionString="DATA SOURCE =.\SQLEXPRESS2012;Initial Catalog=ProjectReportDB; User ID=AppUser; Password = Password1"
+         providerName="System.Data.SqlClient" />
+
+2.  Remember, if and when ou attach the database to your local SqlExpress instance go under the database users and delete the AppUser account.  After that go 'Server Level' on the users and readd the 'AppUser' account and select Sql authentication.  The Password you choose must be reflected in the connection string referenced above.  Make sure the enforcepassword constraints and user must change password at login boxes are NOT checked.  Now, under user mapping make sure they are mapped to the ProjectReportDB as dbo (database owner).
+3.  Under IISHost, right click the WCFPortal.svc file and select browse.  Make sure a valid document comes up under your browser.
+4.  Now set the WinFormsUI as the startup project and you are ready to go!
+
+Questions?  email me at dean@advovet.com
+
+This code will change weekly at a minimum.  Check for more videos at www.youtube.com/TexasLakeHouse.  Thanks!
