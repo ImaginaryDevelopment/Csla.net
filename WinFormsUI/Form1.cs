@@ -15,9 +15,15 @@ namespace WinFormsUI
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
+        {
+            LoadPerson();
+        }
+
+        private void LoadPerson()
         {
             try
             {
