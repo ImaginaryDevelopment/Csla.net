@@ -89,9 +89,9 @@
       <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
       <Name>Csla</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccess.SQL2012Express\DataAccess.SQL2012Express.csproj">
-      <Project>{a280855b-fa47-4ea5-b35a-d005012ff5fa}</Project>
-      <Name>DataAccess.SQL2012Express</Name>
+    <ProjectReference Include="..\DataAccess.InMemory\DataAccess.InMemory.csproj">
+      <Project>{75ce2d42-c5a7-42dd-8641-fc59122dd5e7}</Project>
+      <Name>DataAccess.InMemory</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{6f68b965-dc3d-48c6-869b-8ad16f42c7d9}</Project>

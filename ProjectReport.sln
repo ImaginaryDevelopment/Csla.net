@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.SQL2012Express.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectDocuments", "ProjectDocuments\ProjectDocuments.csproj", "{9343ED2B-1FED-4529-AA66-34620D0D1A15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.InMemory", "DataAccess.InMemory\DataAccess.InMemory.csproj", "{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,6 +120,16 @@ Global
 		{9343ED2B-1FED-4529-AA66-34620D0D1A15}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9343ED2B-1FED-4529-AA66-34620D0D1A15}.Testing|Any CPU.ActiveCfg = Release|Any CPU
 		{9343ED2B-1FED-4529-AA66-34620D0D1A15}.Testing|Any CPU.Build.0 = Release|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Mono Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Mono Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Mono Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Mono Release|Any CPU.Build.0 = Release|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Testing|Any CPU.ActiveCfg = Release|Any CPU
+		{75CE2D42-C5A7-42DD-8641-FC59122DD5E7}.Testing|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
